@@ -310,3 +310,53 @@ nav ul li a{
     margin-top:20px;
     font-size:15px;
 }
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .hero{
+        height:100vh;
+        padding:20px;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .about{
+        flex-direction:column;
+        padding:50px 20px;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:220px;
+        height:220px;
+        border-radius:50%;
+        object-fit:cover;
+    }
+
+    .projects{
+        padding:40px 20px;
+    }
+
+    .project-card{
+        width:100%;
+        max-width:330px;
+    }
+
+    .contact form{
+        width:100%;
+    }
+}
