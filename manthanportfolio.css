@@ -55,7 +55,7 @@ nav ul li a{
     align-items:center;
     flex-direction:column;
     text-align:center;
-
+    padding-top:100px;
     color:white;
 }
 
@@ -318,42 +318,55 @@ nav ul li a{
         padding:15px;
     }
 
+    nav h2{
+        margin-bottom:15px;
+        text-align:center;
+    }
+
     nav ul{
+        display:flex;
         flex-wrap:wrap;
         justify-content:center;
-        margin-top:10px;
+        gap:15px;
+    }
+
+    nav ul li{
+        margin:0;
     }
 
     .hero{
-        height:100vh;
-        padding:20px;
-        text-align:center;
+        padding:100px 20px 30px;
+        height:auto;
+        min-height:100vh;
     }
 
     .hero h1{
         font-size:32px;
     }
 
+    .hero p{
+        font-size:18px;
+    }
+
     .about{
         flex-direction:column;
         padding:50px 20px;
-        text-align:center;
     }
 
     .about-image img{
         width:220px;
         height:220px;
-        border-radius:50%;
         object-fit:cover;
-    }
-
-    .projects{
-        padding:40px 20px;
     }
 
     .project-card{
         width:100%;
-        max-width:330px;
+        max-width:320px;
+        margin:auto;
+    }
+
+    .contact{
+        padding:50px 20px;
     }
 
     .contact form{
