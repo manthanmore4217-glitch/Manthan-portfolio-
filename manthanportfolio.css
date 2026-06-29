@@ -57,6 +57,17 @@ nav ul li a{
     text-align:center;
     padding-top:100px;
     color:white;
+    animation: fadeUp 1s ease;
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 .hero h1{
@@ -70,13 +81,24 @@ nav ul li a{
 }
 
 .hero button{
-    padding:12px 30px;
-    font-size:18px;
-    border:none;
-    background-color:blue;
-    color:white;
-    cursor:pointer;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
 }
+
+.hero button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.45);
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
 
 
 .about{
@@ -90,6 +112,10 @@ nav ul li a{
 .about-image img{
     width: 300px;
     border-radius: 10px;
+    transition:0.4s ease;
+}
+.about-image img:hover{
+    transform:scale(1.05);
 }
 
 .about-text{
@@ -133,10 +159,12 @@ nav ul li a{
     background:#f4f4f4;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.2);
+     transition:0.3s ease;
 }
 .skill-box:hover{
     background-color: #8f6767;
     box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    transform:translateY(-8px);
 }
 
 
@@ -263,6 +291,7 @@ nav ul li a{
 
 .contact button:hover{
     background:#0056b3;
+    transform:scale(1.05);
 }
 #about,
 #skills,
@@ -310,6 +339,8 @@ nav ul li a{
     margin-top:20px;
     font-size:15px;
 }
+
+
 
 @media (max-width:768px){
 
